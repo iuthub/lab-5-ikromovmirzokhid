@@ -4,7 +4,7 @@
 		<title>Buy Your Way to a Better Education!</title>
 		<link href="buyagrade.css" type="text/css" rel="stylesheet" />
 	</head>
-	
+
 	<body>
 		<h1>Buy Your Way to a Better Education!</h1>
 
@@ -13,27 +13,44 @@
 		</p>
 		
 		<hr />
-		
-		<h2>Give Us Your Money</h2>
-		<dl>
-			<dt>Name</dt>
-			<dd>
-				???
-			</dd>
-			
-			<dt>Section</dt>
-			<dd>
-				???
-			</dd>
-			
-			<dt>Credit Card</dt>
-			<dd>
-				???
-			</dd>
-		</dl>
-		
-		<div>
-			I am a giant sucker.
-		</div>
+
+		<form action="sucker.php" method="post" enctype="multipart/form-data"> 
+			<fieldset>
+				<legend>Give Us Your Money</legend>
+					<dl>
+						<dt>Name</dt>
+						<dd>
+							<input type="text" name="name">
+						</dd>
+						
+						<dt>Section</dt>
+						<dd>
+							<select name="section">
+								<option value="" disabled selected hidden>Select your Section</option>
+									<option value="MA">MA</option>
+									<option value="MB">MB</option>
+									<option value="MC">MC</option>
+									<option value="MD">MD</option>
+									<option value="ME">ME</option>
+									<option value="MF">MF</option>
+									<option value="MG">MG</option>
+									<option value="MH">MH</option>
+							</select>
+						</dd>
+						
+						<dt>Credit Card</dt>
+						<dd>
+							<input type="Credit" name="credit">
+						</dd>
+						<dd>
+							<input type="radio" name="cc" value="Visa" checked="checked"> Visa
+							<input type="radio" name="cc" value="Master Card"> Master Card
+						</dd>
+						<div>
+							<input type="submit" value="I am a giant sucker.">
+						</div>
+					</dl>
+			</fieldset>
+		</form>
 	</body>
 </html>
